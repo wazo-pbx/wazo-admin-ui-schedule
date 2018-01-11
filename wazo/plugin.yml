@@ -1,9 +1,9 @@
 name: admin-ui-schedule
 namespace: official
-version: 0.0.1
+version: 0.0.1-1
 author: Wazo Team
 display_name: Schedule
-min_wazo_version: 17.17
+min_wazo_version: 18.01
 tags:
   - beta
   - internal
