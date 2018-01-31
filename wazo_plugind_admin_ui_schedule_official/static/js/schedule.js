@@ -7,6 +7,6 @@ $(document).ready(function () {
 
 function init_time_picker() {
   $('[class^=schedule_date_hours_]').timepicker({
-    timeFormat: 'hh:mm',
+    timeFormat: 'HH:mm',
   });
 }
