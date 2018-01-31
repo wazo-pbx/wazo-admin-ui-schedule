@@ -17,10 +17,30 @@ from wtforms.validators import InputRequired
 from wazo_admin_ui.helpers.destination import DestinationField
 from wazo_admin_ui.helpers.form import BaseForm
 
-week_days = [l_('Monday'), l_('Tuesday'), l_('Wednesday'), l_('Thursday'), l_('Friday'), l_('Saturday'), l_('Sunday')]
+week_days = [
+    l_('Monday'),
+    l_('Tuesday'),
+    l_('Wednesday'),
+    l_('Thursday'),
+    l_('Friday'),
+    l_('Saturday'),
+    l_('Sunday')
+]
 month_days = range(1, 31)
-months = [l_('January'), l_('February'), l_('March'), l_('April'), l_('May'), l_('June'), l_('July'),
-          l_('August'), l_('September'), l_('October'), l_('November'), l_('December')]
+months = [
+    l_('January'),
+    l_('February'),
+    l_('March'),
+    l_('April'),
+    l_('May'),
+    l_('June'),
+    l_('July'),
+    l_('August'),
+    l_('September'),
+    l_('October'),
+    l_('November'),
+    l_('December')
+]
 
 
 def convert_list_to_choices(list_):
