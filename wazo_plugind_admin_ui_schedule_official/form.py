@@ -52,6 +52,7 @@ def convert_list_to_choices(list_):
 
 def list_timezones():
     result = [('', l_('None'))]
+    # XXX: Should use REST API /timezones to avoid disparities with different systems
     result.extend(list(zip(pytz.all_timezones, pytz.all_timezones)))
     return result
 
