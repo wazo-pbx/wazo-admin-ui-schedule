@@ -32,7 +32,7 @@
               {% call build_table() %}
 
                 {% call build_table_headers() %}
-                  <th class="text-center">{{ _('Date') }}</th>
+                  <th class="text-center">{{ _('Periods') }}</th>
                   <th class="text-center">{{ _('Destination') }}</th>
                   <th></th>
                 {% endcall %}
@@ -58,8 +58,7 @@
               {% call build_table() %}
 
                 {% call build_table_headers() %}
-                  <th class="text-center">{{ _('Date') }}</th>
-                  <th class="text-center">{{ _('Destination') }}</th>
+                  <th class="text-center">{{ _('Periods') }}</th>
                   <th></th>
                 {% endcall %}
 
@@ -88,17 +87,25 @@
     {% set tr_class = "row-template hidden" %}
   {% endif %}
   <tr class="{{ tr_class }}">
-    <td class="col-sm-5">
-      {{ render_field(exceptional_period.hours_start, class_='schedule_date_hours_start') }}
-      {{ render_field(exceptional_period.hours_end, class_='schedule_date_hours_end') }}
+    <td class="col-sm-7">
+      {{ render_field(exceptional_period.hours_start,
+                      class_='schedule_date_hours_start',
+                      divclass='col-sm-4',
+                      inputclass='ui-helper-clearfix',
+                      placeholder=_('Hour Start')) }}
+      {{ render_field(exceptional_period.hours_end,
+                      class_='schedule_date_hours_end',
+                      with_label=False,
+                      divclass='col-sm-4',
+                      placeholder=_('Hour End')) }}
       {{ render_field(exceptional_period.week_days, data_select_unselect_all=True, data_select_is_not_sortable=True) }}
       {{ render_field(exceptional_period.month_days, data_select_unselect_all=True, data_select_is_not_sortable=True) }}
       {{ render_field(exceptional_period.months, data_select_unselect_all=True, data_select_is_not_sortable=True) }}
     </td>
-    <td class="col-sm-6">
+    <td class="col-sm-5">
       {{ render_field(exceptional_period.destination, with_label=False) }}
     </td>
-    <td class="text-center col-sm-1">
+    <td class="text-center">
       {{ add_delete_entry_button() }}
     </td>
   </tr>
@@ -109,14 +116,22 @@
     {% set tr_class = "row-template hidden" %}
   {% endif %}
   <tr class="{{ tr_class }}">
-    <td class="col-sm-11">
-      {{ render_field(open_period.hours_start, class_='schedule_date_hours_start') }}
-      {{ render_field(open_period.hours_end, class_='schedule_date_hours_end') }}
+    <td class="col-sm-12">
+      {{ render_field(open_period.hours_start,
+                      class_='schedule_date_hours_start',
+                      divclass='col-sm-4',
+                      inputclass='ui-helper-clearfix',
+                      placeholder=_('Hour Start')) }}
+      {{ render_field(open_period.hours_end,
+                      class_='schedule_date_hours_end',
+                      with_label=False,
+                      divclass='col-sm-4',
+                      placeholder=_('Hour End')) }}
       {{ render_field(open_period.week_days, data_select_unselect_all=True, data_select_is_not_sortable=True) }}
       {{ render_field(open_period.month_days, data_select_unselect_all=True, data_select_is_not_sortable=True) }}
       {{ render_field(open_period.months, data_select_unselect_all=True, data_select_is_not_sortable=True) }}
     </td>
-    <td class="text-center col-sm-1">
+    <td class="text-center">
       {{ add_delete_entry_button() }}
     </td>
   </tr>
