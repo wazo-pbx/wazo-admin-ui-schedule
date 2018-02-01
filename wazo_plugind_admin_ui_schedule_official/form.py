@@ -58,8 +58,8 @@ def list_timezones():
 
 
 class PeriodForm(BaseForm):
-    hours_start = StringField(l_('Hour Start'))
-    hours_end = StringField(l_('Hour End'))
+    hours_start = StringField(l_('Hours'), validators=[InputRequired()])
+    hours_end = StringField(l_('Hours'), validators=[InputRequired()])
     week_days = SelectMultipleField(l_('Weekdays'), choices=convert_list_to_choices(week_days))
     month_days = SelectMultipleField(l_('Monthdays'), choices=convert_list_to_choices(month_days))
     months = SelectMultipleField(l_('Months'), choices=convert_list_to_choices(months))
