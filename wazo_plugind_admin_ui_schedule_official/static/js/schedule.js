@@ -1,12 +1,13 @@
 $(document).ready(function () {
-  init_time_picker()
-  $('.add-row-entry').click(function(e) {
-    init_time_picker()
+  init_time_picker.call(this);
+
+  $('.row-template').on("row:cloned", function (e, row) {
+    init_time_picker.call(row);
   });
 });
 
 function init_time_picker() {
-  $('[class^=schedule_date_hours_]').timepicker({
+  $('[class^=schedule_date_hours_]', this).timepicker({
     timeFormat: 'HH:mm',
   });
 }
