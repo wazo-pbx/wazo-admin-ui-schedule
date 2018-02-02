@@ -98,9 +98,9 @@
                       with_label=False,
                       divclass='col-sm-4',
                       placeholder=_('Hour End')) }}
-      {{ render_field(exceptional_period.week_days, data_select_unselect_all=True, data_select_is_not_sortable=True) }}
-      {{ render_field(exceptional_period.month_days, data_select_unselect_all=True, data_select_is_not_sortable=True) }}
-      {{ render_field(exceptional_period.months, data_select_unselect_all=True, data_select_is_not_sortable=True) }}
+      {{ render_field(exceptional_period.week_days, data_select_unselect_all=True, data_disable_sort=True) }}
+      {{ render_field(exceptional_period.month_days, data_select_unselect_all=True, data_disable_sort=True) }}
+      {{ render_field(exceptional_period.months, data_select_unselect_all=True, data_disable_sort=True) }}
     </td>
     <td class="col-sm-5">
       {{ render_field(exceptional_period.destination, with_label=False) }}
@@ -127,9 +127,9 @@
                       with_label=False,
                       divclass='col-sm-4',
                       placeholder=_('Hour End')) }}
-      {{ render_field(open_period.week_days, data_select_unselect_all=True, data_select_is_not_sortable=True) }}
-      {{ render_field(open_period.month_days, data_select_unselect_all=True, data_select_is_not_sortable=True) }}
-      {{ render_field(open_period.months, data_select_unselect_all=True, data_select_is_not_sortable=True) }}
+      {{ render_field(open_period.week_days, data_select_unselect_all=True, data_disable_sort=True) }}
+      {{ render_field(open_period.month_days, data_select_unselect_all=True, data_disable_sort=True) }}
+      {{ render_field(open_period.months, data_select_unselect_all=True, data_disable_sort=True) }}
     </td>
     <td class="text-center">
       {{ add_delete_entry_button() }}
