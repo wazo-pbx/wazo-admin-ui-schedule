@@ -1,3 +1,4 @@
+plugin_format_version: 2
 name: admin-ui-schedule
 namespace: official
 version: 0.0.1-2
@@ -5,6 +6,5 @@ author: Wazo Team
 display_name: Schedule
 min_wazo_version: 18.01
 tags:
-  - beta
   - internal
 homepage: https://github.com/wazo-pbx/wazo-admin-ui-schedule
