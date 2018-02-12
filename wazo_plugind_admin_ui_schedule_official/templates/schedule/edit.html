@@ -111,9 +111,9 @@
     <td class="col-sm-12">
       {{ render_field(open_period.hours_start, class_='schedule_date_hours_start', placeholder=_('Hour Start')) }}
       {{ render_field(open_period.hours_end, class_='schedule_date_hours_end', placeholder=_('Hour End')) }}
-      {{ render_field(open_period.week_days, data_select_unselect_all=True, data_disable_sort=True, data_validate='true') }}
-      {{ render_field(open_period.month_days, data_select_unselect_all=True, data_disable_sort=True, data_validate='true') }}
-      {{ render_field(open_period.months, data_select_unselect_all=True, data_disable_sort=True, data_validate='true') }}
+      {{ render_field(open_period.week_days, data_select_unselect_all=True, data_disable_sort=True) }}
+      {{ render_field(open_period.month_days, data_select_unselect_all=True, data_disable_sort=True) }}
+      {{ render_field(open_period.months, data_select_unselect_all=True, data_disable_sort=True) }}
     </td>
     <td class="text-center">
       {{ add_delete_entry_button() }}
