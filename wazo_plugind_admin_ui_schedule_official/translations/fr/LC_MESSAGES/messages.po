@@ -1,16 +1,16 @@
-# Translations template for wazo-admin-ui-schedule.
+# Translations template for wazo_admin_ui_schedule.
 # Copyright (C) 2018 The Wazo Authors  (see the AUTHORS file)
 # This file is distributed under the same license as the
-# wazo-admin-ui-schedule project.
+# wazo_admin_ui_schedule project.
 # Wazo Dev Team <dev@wazo.community>, 2018.
 # 
 # Translators:
 # Cedric Abunar <cabunar@wazo.io>, 2018
 msgid ""
 msgstr ""
-"Project-Id-Version: wazo-admin-ui-schedule 0.1\n"
+"Project-Id-Version: wazo_admin_ui_schedule 0.1\n"
 "Report-Msgid-Bugs-To: 'dev@wazo.community'\n"
-"POT-Creation-Date: 2018-02-26 12:56-0500\n"
+"POT-Creation-Date: 2018-02-27 13:43-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Cedric Abunar <cabunar@wazo.io>, 2018\n"
 "Language-Team: French (https://www.transifex.com/wazo/teams/69545/fr/)\n"
@@ -102,10 +102,14 @@ msgid "None"
 msgstr "Aucun"
 
 #: wazo_plugind_admin_ui_schedule_official/form.py:61
+#: wazo_plugind_admin_ui_schedule_official/templates/schedule/edit.html:91
+#: wazo_plugind_admin_ui_schedule_official/templates/schedule/edit.html:112
 msgid "Hour Start"
 msgstr "Heure de début"
 
 #: wazo_plugind_admin_ui_schedule_official/form.py:62
+#: wazo_plugind_admin_ui_schedule_official/templates/schedule/edit.html:92
+#: wazo_plugind_admin_ui_schedule_official/templates/schedule/edit.html:113
 msgid "Hour End"
 msgstr "Heure de fin"
 
@@ -135,14 +139,47 @@ msgstr "Fuseau horaire"
 msgid "Submit"
 msgstr "Soumettre"
 
+#: wazo_plugind_admin_ui_schedule_official/templates/schedule/edit.html:4
 #: wazo_plugind_admin_ui_schedule_official/templates/schedule/list.html:9
 #: wazo_plugind_admin_ui_schedule_official/view.py:18
 msgid "Schedules"
 msgstr "Horaires"
 
+#: wazo_plugind_admin_ui_schedule_official/templates/schedule/edit.html:4
+msgid "Edit"
+msgstr "Modifier"
+
+#: wazo_plugind_admin_ui_schedule_official/templates/schedule/edit.html:12
 #: wazo_plugind_admin_ui_schedule_official/templates/schedule/list.html:4
 msgid "Schedule"
 msgstr "Horaire"
+
+#: wazo_plugind_admin_ui_schedule_official/templates/schedule/edit.html:13
+msgid "General"
+msgstr "Général "
+
+#: wazo_plugind_admin_ui_schedule_official/templates/schedule/edit.html:14
+msgid "Exceptional periods"
+msgstr "Périodes exceptionnelles"
+
+#: wazo_plugind_admin_ui_schedule_official/templates/schedule/edit.html:15
+msgid "Open periods"
+msgstr "Périodes ouvertes"
+
+#: wazo_plugind_admin_ui_schedule_official/templates/schedule/edit.html:22
+#: wazo_plugind_admin_ui_schedule_official/templates/schedule/edit.html:31
+#: wazo_plugind_admin_ui_schedule_official/templates/schedule/edit.html:56
+msgid "Update"
+msgstr "Mettre à jour"
+
+#: wazo_plugind_admin_ui_schedule_official/templates/schedule/edit.html:35
+#: wazo_plugind_admin_ui_schedule_official/templates/schedule/edit.html:61
+msgid "Periods"
+msgstr "Périodes"
+
+#: wazo_plugind_admin_ui_schedule_official/templates/schedule/edit.html:36
+msgid "Destination"
+msgstr "Destination"
 
 #: wazo_plugind_admin_ui_schedule_official/templates/schedule/list.html:4
 msgid "List"
